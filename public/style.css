@@ -22,22 +22,24 @@ ul li {
     margin-bottom: 1rem;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 .citation {
-    display: block;
     font-style: normal;
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
-.citation i {
+.citation-title {
+    color: #007bff;
+    text-decoration: none;
     font-style: italic;
 }
+
+.citation-title:hover {
+    text-decoration: underline;
+}
+
+.citation-details {
+    font-style: normal;
+    color: #333;
+}
+
