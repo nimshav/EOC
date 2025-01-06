@@ -1,29 +1,43 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #eef;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f9f9f9;
+    margin: 0;
     padding: 2rem;
+    color: #333;
+    line-height: 1.6;
 }
 
 h1 {
     text-align: center;
-    color: #444;
+    color: #222;
+    margin-bottom: 2rem;
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 ul li {
-    margin: 0.5rem 0;
+    margin-bottom: 1rem;
 }
 
 a {
-    text-decoration: none;
     color: #007bff;
-    font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.citation {
+    display: block;
+    font-style: normal;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.citation i {
+    font-style: italic;
 }
