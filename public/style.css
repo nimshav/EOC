@@ -72,13 +72,14 @@ ul li {
 
 .citation-title {
     font-size: 1.1rem; /* Slightly larger font for titles within citations */
-    color: #4caf50; /* Green for links in dark mode */
+    color: #ff9800; /* Orangish color for links */
     text-decoration: none;
     font-style: italic;
 }
 
 .citation-title:hover {
     text-decoration: underline;
+    color: #ffa726; /* Lighter orangish hue on hover */
 }
 
 .citation-details {
@@ -89,12 +90,13 @@ ul li {
 
 /* Additional Dark Mode Styles for Links */
 a {
-    color: #4caf50; /* Green for links */
+    color: #ff9800; /* Orangish color for links */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline; /* Underline on hover for better accessibility */
+    color: #ffa726; /* Lighter orangish hue on hover */
 }
 
 /* Responsive Design for Small Screens */
