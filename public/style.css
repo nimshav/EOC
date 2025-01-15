@@ -45,8 +45,9 @@ h2 {
 }
 
 .image-container img {
-    max-width: 100%; /* Ensures the image scales well */
-    height: auto;
+    width: 100%; /* Matches the container's width */
+    max-width: 800px; /* Ensures it does not exceed the text container width */
+    height: auto; /* Maintains the aspect ratio */
     border-radius: 8px; /* Optional: Adds rounded corners to the image */
 }
 
@@ -83,3 +84,4 @@ ul li {
     color: #333;
     font-size: 1rem; /* Ensure consistency with citation text */
 }
+
