@@ -1,3 +1,4 @@
+/* General Body Styles */
 body {
     font-family: "Times New Roman", Times, serif;
     background-color: #f9f9f9;
@@ -7,12 +8,30 @@ body {
     line-height: 1.6;
 }
 
+/* Centralized Headings */
 h1 {
     text-align: center;
     color: #222;
     margin-bottom: 2rem;
 }
 
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 2rem;
+}
+
+/* Description Section */
+.description {
+    max-width: 800px;
+    margin: 0 auto 2rem auto; /* Center and add spacing */
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Bibliography Styles */
 ul {
     list-style-type: none;
     padding: 0;
@@ -42,4 +61,3 @@ ul li {
     font-style: normal;
     color: #333;
 }
-
