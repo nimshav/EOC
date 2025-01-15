@@ -6,7 +6,7 @@ body {
     padding: 2rem;
     color: #e0e0e0; /* Light text color for dark mode */
     line-height: 1.5; /* Standard line height for readability */
-    font-size: 0.9rem; /* Default font size */
+    font-size: 1rem; /* Base font size for all text */
 }
 
 /* Centralized Headings */
@@ -14,14 +14,12 @@ h1 {
     text-align: center;
     color: #ffffff; /* Bright white for the main heading */
     margin-bottom: 2rem;
-    font-size: 1.8rem; /* Font size for the main heading */
 }
 
 h2 {
     text-align: center;
     color: #e0e0e0; /* Light text color for subheadings */
     margin-top: 2rem;
-    font-size: 1.4rem; /* Font size for subheadings */
 }
 
 /* Description Section */
@@ -29,12 +27,10 @@ h2 {
     max-width: 800px;
     margin: 0 auto 2rem auto; /* Center and add spacing */
     text-align: justify; /* Justify text for readability */
-    line-height: 1.6; /* Increased line height for better readability */
-    font-size: 0.85rem; /* Reduced font size specifically for this section */
     color: #d0d0d0; /* Lighter text for readability in dark mode */
 }
 
-.description p {
+/.description p {
     margin: 0; /* Removes margins between paragraphs */
 }
 
@@ -65,13 +61,10 @@ ul li {
 /* Citation Styles */
 .citation {
     font-style: normal;
-    font-size: 1rem; /* Larger font size for citation text */
-    margin-bottom: 0.5rem;
     color: #c0c0c0; /* Light color for citations */
 }
 
 .citation-title {
-    font-size: 1.1rem; /* Slightly larger font for titles within citations */
     color: #ff9800; /* Orangish color for links */
     text-decoration: none;
     font-style: italic;
@@ -83,42 +76,4 @@ ul li {
 }
 
 .citation-details {
-    font-style: normal;
-    color: #c0c0c0; /* Ensure consistency with citation text */
-    font-size: 1rem; /* Font size for citation details */
-}
-
-/* Additional Dark Mode Styles for Links */
-a {
-    color: #ff9800; /* Orangish color for links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline; /* Underline on hover for better accessibility */
-    color: #ffa726; /* Lighter orangish hue on hover */
-}
-
-/* Responsive Design for Small Screens */
-@media (max-width: 768px) {
-    body {
-        padding: 1rem; /* Reduce padding for smaller screens */
-    }
-
-    h1 {
-        font-size: 1.5rem; /* Adjust heading size for smaller screens */
-    }
-
-    h2 {
-        font-size: 1.2rem; /* Adjust subheading size for smaller screens */
-    }
-
-    .description {
-        font-size: 0.8rem; /* Smaller font for description on small screens */
-    }
-
-    .image-container img {
-        width: 100%; /* Make the image fully responsive */
-        max-width: 100%; /* Remove maximum width constraint */
-    }
-}
+    f
