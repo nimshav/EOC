@@ -38,6 +38,18 @@ h2 {
     margin: 0; /* Removes margins between paragraphs */
 }
 
+/* Image Container */
+.image-container {
+    text-align: center; /* Centers the image */
+    margin: 2rem auto; /* Adds spacing around the image */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensures the image scales well */
+    height: auto;
+    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+}
+
 /* Bibliography Styles */
 ul {
     list-style-type: none;
@@ -71,5 +83,3 @@ ul li {
     color: #333;
     font-size: 1rem; /* Ensure consistency with citation text */
 }
-
-
