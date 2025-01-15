@@ -5,8 +5,8 @@ body {
     margin: 0;
     padding: 2rem;
     color: #333;
-    line-height: 1.5; /* Slightly reduced for smaller fonts */
-    font-size: 0.9rem; /* Smaller default font size */
+    line-height: 1.5; /* Standard line height for the body */
+    font-size: 0.9rem; /* Default font size */
 }
 
 /* Centralized Headings */
@@ -14,24 +14,24 @@ h1 {
     text-align: center;
     color: #222;
     margin-bottom: 2rem;
-    font-size: 1.8rem; /* Smaller font size for heading */
+    font-size: 1.8rem; /* Font size for the main heading */
 }
 
 h2 {
     text-align: center;
     color: #333;
     margin-top: 2rem;
-    font-size: 1.4rem; /* Smaller font size for subheadings */
+    font-size: 1.4rem; /* Font size for subheadings */
 }
 
 /* Description Section */
 .description {
     max-width: 800px;
     margin: 0 auto 2rem auto; /* Center and add spacing */
-    text-align: justify;
-    line-height: 1.6;
-    font-size: 0.85rem; /* Reduced font size for description */
-    color: #444;
+    text-align: justify; /* Justify text for readability */
+    line-height: 1.6; /* Increased line height for better readability */
+    font-size: 0.85rem; /* Reduced font size specifically for this section */
+    color: #444; /* Slightly lighter text color */
 }
 
 .description p {
@@ -50,7 +50,7 @@ ul li {
 
 .citation {
     font-style: normal;
-    font-size: 0.85rem; /* Reduced font size for citations */
+    font-size: 0.85rem; /* Font size for citations */
     margin-bottom: 0.5rem;
 }
 
