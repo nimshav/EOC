@@ -1,25 +1,25 @@
-/* General Body Styles */
+/* General Body Styles for Dark Mode */
 body {
     font-family: "Times New Roman", Times, serif;
-    background-color: #f9f9f9;
+    background-color: #121212; /* Dark background */
     margin: 0;
     padding: 2rem;
-    color: #333;
-    line-height: 1.5; /* Standard line height for the body */
+    color: #e0e0e0; /* Light text color for dark mode */
+    line-height: 1.5; /* Standard line height for readability */
     font-size: 0.9rem; /* Default font size */
 }
 
 /* Centralized Headings */
 h1 {
     text-align: center;
-    color: #222;
+    color: #ffffff; /* Bright white for the main heading */
     margin-bottom: 2rem;
     font-size: 1.8rem; /* Font size for the main heading */
 }
 
 h2 {
     text-align: center;
-    color: #333;
+    color: #e0e0e0; /* Light text color for subheadings */
     margin-top: 2rem;
     font-size: 1.4rem; /* Font size for subheadings */
 }
@@ -31,7 +31,7 @@ h2 {
     text-align: justify; /* Justify text for readability */
     line-height: 1.6; /* Increased line height for better readability */
     font-size: 0.85rem; /* Reduced font size specifically for this section */
-    color: #444; /* Slightly lighter text color */
+    color: #d0d0d0; /* Lighter text for readability in dark mode */
 }
 
 .description p {
@@ -45,10 +45,11 @@ h2 {
 }
 
 .image-container img {
-    width: 100%; /* Matches the container's width */
-    max-width: 800px; /* Ensures it does not exceed the text container width */
+    width: 90%; /* Scales the image for smaller screens */
+    max-width: 600px; /* Limits the maximum width for larger screens */
     height: auto; /* Maintains the aspect ratio */
     border-radius: 8px; /* Optional: Adds rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for better visibility */
 }
 
 /* Bibliography Styles */
@@ -66,11 +67,12 @@ ul li {
     font-style: normal;
     font-size: 1rem; /* Larger font size for citation text */
     margin-bottom: 0.5rem;
+    color: #c0c0c0; /* Light color for citations */
 }
 
 .citation-title {
     font-size: 1.1rem; /* Slightly larger font for titles within citations */
-    color: #007bff;
+    color: #4caf50; /* Green for links in dark mode */
     text-decoration: none;
     font-style: italic;
 }
@@ -81,7 +83,40 @@ ul li {
 
 .citation-details {
     font-style: normal;
-    color: #333;
-    font-size: 1rem; /* Ensure consistency with citation text */
+    color: #c0c0c0; /* Ensure consistency with citation text */
+    font-size: 1rem; /* Font size for citation details */
 }
 
+/* Additional Dark Mode Styles for Links */
+a {
+    color: #4caf50; /* Green for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better accessibility */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Adjust subheading size for smaller screens */
+    }
+
+    .description {
+        font-size: 0.8rem; /* Smaller font for description on small screens */
+    }
+
+    .image-container img {
+        width: 100%; /* Make the image fully responsive */
+        max-width: 100%; /* Remove maximum width constraint */
+    }
+}
