@@ -30,7 +30,7 @@ h2 {
     color: #d0d0d0; /* Lighter text for readability in dark mode */
 }
 
-/.description p {
+.description p {
     margin: 0; /* Removes margins between paragraphs */
 }
 
@@ -48,32 +48,70 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for better visibility */
 }
 
-/* Bibliography Styles */
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0; /* Add spacing around the table */
+    background-color: #1e1e1e; /* Dark mode table background */
+    color: #e0e0e0; /* Light text for dark mode */
+    text-align: left;
+    font-size: 1rem; /* Keep consistent font size for table */
 }
 
-ul li {
-    margin-bottom: 1rem;
+th, td {
+    border: 1px solid #333; /* Table border color */
+    padding: 0.75rem 1rem; /* Padding inside cells */
 }
 
-/* Citation Styles */
-.citation {
-    font-style: normal;
-    color: #c0c0c0; /* Light color for citations */
+th {
+    background-color: #333; /* Darker background for headers */
+    color: #ffffff; /* White text for headers */
 }
 
-.citation-title {
+tr:nth-child(even) {
+    background-color: #292929; /* Alternate row coloring */
+}
+
+tr:hover {
+    background-color: #404040; /* Highlight row on hover */
+}
+
+/* Link Styling */
+a {
     color: #ff9800; /* Orangish color for links */
     text-decoration: none;
-    font-style: italic;
 }
 
-.citation-title:hover {
-    text-decoration: underline;
+a:hover {
+    text-decoration: underline; /* Underline on hover */
     color: #ffa726; /* Lighter orangish hue on hover */
 }
 
-.citation-details {
-    f
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    h1, h2 {
+        font-size: 1.2rem; /* Adjust heading sizes for smaller screens */
+    }
+
+    .description {
+        font-size: 0.9rem; /* Adjust font size for description */
+    }
+
+    .image-container img {
+        width: 100%; /* Make image fully responsive */
+        max-width: 100%; /* Remove maximum width constraint */
+    }
+
+    table {
+        font-size: 0.9rem; /* Adjust table font size for smaller screens */
+    }
+
+    th, td {
+        padding: 0.5rem; /* Adjust padding for smaller table cells */
+    }
+}
