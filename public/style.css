@@ -5,7 +5,8 @@ body {
     margin: 0;
     padding: 2rem;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5; /* Slightly reduced for smaller fonts */
+    font-size: 0.9rem; /* Smaller default font size */
 }
 
 /* Centralized Headings */
@@ -13,12 +14,14 @@ h1 {
     text-align: center;
     color: #222;
     margin-bottom: 2rem;
+    font-size: 1.8rem; /* Smaller font size for heading */
 }
 
 h2 {
     text-align: center;
     color: #333;
     margin-top: 2rem;
+    font-size: 1.4rem; /* Smaller font size for subheadings */
 }
 
 /* Description Section */
@@ -26,9 +29,13 @@ h2 {
     max-width: 800px;
     margin: 0 auto 2rem auto; /* Center and add spacing */
     text-align: justify;
-    line-height: 1.8;
-    font-size: 1rem;
+    line-height: 1.6;
+    font-size: 0.85rem; /* Reduced font size for description */
     color: #444;
+}
+
+.description p {
+    margin: 0; /* Removes margins between paragraphs */
 }
 
 /* Bibliography Styles */
@@ -43,7 +50,7 @@ ul li {
 
 .citation {
     font-style: normal;
-    font-size: 1rem;
+    font-size: 0.85rem; /* Reduced font size for citations */
     margin-bottom: 0.5rem;
 }
 
@@ -51,6 +58,7 @@ ul li {
     color: #007bff;
     text-decoration: none;
     font-style: italic;
+    font-size: 0.9rem; /* Slightly larger for titles */
 }
 
 .citation-title:hover {
@@ -61,3 +69,4 @@ ul li {
     font-style: normal;
     color: #333;
 }
+
