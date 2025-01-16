@@ -1,118 +1,126 @@
 /* General Body Styles for Dark Mode */
 body {
     font-family: "Times New Roman", Times, serif;
-    background-color: #121212; /* Dark background */
+    background-color: #121212; /* Dark background for contrast */
     margin: 0;
     padding: 2rem;
-    color: #e0e0e0; /* Light text color for dark mode */
-    line-height: 1.5; /* Standard line height for readability */
-    font-size: 1rem; /* Base font size for all text */
+    color: #e0e0e0; /* Light text color for readability */
+    line-height: 1.6; /* Slightly increased line height for better readability */
+    font-size: 1rem; /* Base font size */
 }
 
 /* Centralized Headings */
 h1 {
     text-align: center;
-    color: #ffffff; /* Bright white for the main heading */
+    color: #ffffff; /* Bright white for main headings */
     margin-bottom: 2rem;
+    font-size: 2rem; /* Adjusted size for main heading */
 }
 
 h2 {
     text-align: center;
-    color: #e0e0e0; /* Light text color for subheadings */
+    color: #e0e0e0; /* Subtle contrast for subheadings */
     margin-top: 2rem;
+    font-size: 1.5rem; /* Adjusted size for subheadings */
 }
 
 /* Description Section */
 .description {
     max-width: 800px;
-    margin: 0 auto 2rem auto; /* Center and add spacing */
-    text-align: justify; /* Justify text for readability */
-    color: #d0d0d0; /* Lighter text for readability in dark mode */
+    margin: 0 auto 2rem auto; /* Center align and spacing below */
+    text-align: justify; /* Justify text alignment */
+    color: #d0d0d0; /* Slightly lighter text for description */
+    font-size: 1rem; /* Consistent size for body text */
 }
 
 .description p {
-    margin: 0; /* Removes margins between paragraphs */
+    margin-bottom: 1rem; /* Add spacing between paragraphs */
 }
 
 /* Image Container */
 .image-container {
-    text-align: center; /* Centers the image */
-    margin: 2rem auto; /* Adds spacing around the image */
+    text-align: center; /* Center the image container */
+    margin: 2rem auto; /* Add spacing around the container */
 }
 
 .image-container img {
-    width: 90%; /* Scales the image for smaller screens */
-    max-width: 600px; /* Limits the maximum width for larger screens */
-    height: auto; /* Maintains the aspect ratio */
-    border-radius: 8px; /* Optional: Adds rounded corners to the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for better visibility */
+    width: 90%; /* Ensure responsiveness */
+    max-width: 600px; /* Restrict maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* More prominent shadow for better focus */
 }
 
 /* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 2rem 0; /* Add spacing around the table */
-    background-color: #1e1e1e; /* Dark mode table background */
-    color: #e0e0e0; /* Light text for dark mode */
+    margin: 2rem 0; /* Add vertical spacing around the table */
+    background-color: #1e1e1e; /* Table background */
+    color: #e0e0e0; /* Light text for visibility */
     text-align: left;
-    font-size: 1rem; /* Keep consistent font size for table */
+    font-size: 1rem; /* Consistent table font size */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Clip content if needed for rounded corners */
 }
 
 th, td {
-    border: 1px solid #333; /* Table border color */
-    padding: 0.75rem 1rem; /* Padding inside cells */
+    border: 1px solid #333; /* Subtle border color for cells */
+    padding: 0.75rem 1rem; /* Inner padding */
 }
 
 th {
-    background-color: #333; /* Darker background for headers */
+    background-color: #333; /* Darker header background */
     color: #ffffff; /* White text for headers */
+    font-weight: bold; /* Distinguish headers */
 }
 
 tr:nth-child(even) {
-    background-color: #292929; /* Alternate row coloring */
+    background-color: #292929; /* Alternate row colors */
 }
 
 tr:hover {
-    background-color: #404040; /* Highlight row on hover */
+    background-color: #404040; /* Highlight effect on hover */
+    cursor: pointer; /* Optional: Indicate interactivity */
 }
 
 /* Link Styling */
 a {
-    color: #ff9800; /* Orangish color for links */
+    color: #ff9800; /* Vibrant orange for links */
     text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
 }
 
 a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: #ffa726; /* Lighter orangish hue on hover */
+    text-decoration: underline; /* Add underline on hover */
+    color: #ffa726; /* Brighter orange on hover */
 }
 
 /* Responsive Design for Small Screens */
 @media (max-width: 768px) {
     body {
-        padding: 1rem; /* Reduce padding for smaller screens */
+        padding: 1rem; /* Reduced padding for smaller screens */
     }
 
     h1, h2 {
-        font-size: 1.2rem; /* Adjust heading sizes for smaller screens */
+        font-size: 1.2rem; /* Adjust heading sizes for better scaling */
     }
 
     .description {
-        font-size: 0.9rem; /* Adjust font size for description */
+        font-size: 0.9rem; /* Slightly smaller text for mobile */
     }
 
     .image-container img {
-        width: 100%; /* Make image fully responsive */
+        width: 100%; /* Ensure full-width responsiveness */
         max-width: 100%; /* Remove maximum width constraint */
     }
 
     table {
-        font-size: 0.9rem; /* Adjust table font size for smaller screens */
+        font-size: 0.9rem; /* Smaller table font for compactness */
     }
 
     th, td {
-        padding: 0.5rem; /* Adjust padding for smaller table cells */
+        padding: 0.5rem; /* Adjust padding for tighter cells */
     }
 }
 
