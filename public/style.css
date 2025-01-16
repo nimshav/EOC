@@ -73,28 +73,53 @@ table {
     margin-top: 1rem;
     background-color: #1e1e1e;
     color: #e0e0e0;
-    table-layout: fixed; /* Ensures equal column widths */
+    table-layout: auto; /* Changed from fixed to auto for dynamic column widths */
 }
 
+/* Fix column alignment and prevent text overflow */
 th, td {
     border: 1px solid #444; /* Lighter border color for better contrast */
     padding: 0.75rem 1rem;
-    text-align: center; /* Centers table text */
-    word-wrap: break-word; /* Prevents text from overflowing */
+    text-align: left; /* Align text to left for better readability */
+    vertical-align: middle; /* Ensure proper alignment of text */
+    word-wrap: break-word; /* Prevents text overflow */
+    overflow-wrap: break-word;
 }
 
+/* Ensure proper header styling */
 th {
     background-color: #333;
     color: #ffffff;
     font-weight: bold;
+    text-align: center; /* Keep table headers centered */
 }
 
+/* Zebra striping for better readability */
 tr:nth-child(even) {
     background-color: #292929;
 }
 
 tr:hover {
     background-color: #404040;
+}
+
+/* Responsive Table for Small Screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem; /* Reduce font size for mobile readability */
+    }
+
+    th, td {
+        padding: 0.5rem;
+        display: block; /* Stack columns vertically */
+        width: 100%;
+        text-align: left; /* Align text to left on small screens */
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 1rem; /* Add spacing between rows */
+    }
 }
 
 /* Community Blog Section */
