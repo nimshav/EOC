@@ -73,7 +73,7 @@ table {
     margin-top: 1rem;
     background-color: #1e1e1e;
     color: #e0e0e0;
-    table-layout: auto; /* Changed from fixed to auto for dynamic column widths */
+    table-layout: fixed; /* Ensures equal column widths */
 }
 
 /* Fix column alignment and prevent text overflow */
@@ -84,14 +84,20 @@ th, td {
     vertical-align: middle; /* Ensure proper alignment of text */
     word-wrap: break-word; /* Prevents text overflow */
     overflow-wrap: break-word;
+    white-space: normal; /* Ensures long text wraps correctly */
 }
 
-/* Ensure proper header styling */
+/* Make all columns equal width */
+th:nth-child(1), td:nth-child(1) { width: 10%; }  /* Year */
+th:nth-child(2), td:nth-child(2) { width: 40%; }  /* Title */
+th:nth-child(3), td:nth-child(3) { width: 25%; }  /* Author */
+th:nth-child(4), td:nth-child(4) { width: 25%; }  /* Publisher */
+
 th {
     background-color: #333;
     color: #ffffff;
     font-weight: bold;
-    text-align: center; /* Keep table headers centered */
+    text-align: center;
 }
 
 /* Zebra striping for better readability */
@@ -111,16 +117,17 @@ tr:hover {
 
     th, td {
         padding: 0.5rem;
-        display: block; /* Stack columns vertically */
-        width: 100%;
+        display: table-cell; /* Keep columns side by side */
+        width: auto;
         text-align: left; /* Align text to left on small screens */
     }
 
     tr {
-        display: block;
+        display: table-row;
         margin-bottom: 1rem; /* Add spacing between rows */
     }
 }
+
 
 /* Community Blog Section */
 .community-blog {
