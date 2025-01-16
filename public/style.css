@@ -9,26 +9,31 @@ body {
     font-size: 1rem; /* Base font size */
 }
 
-/* Centralized Headings */
+/* Centralized Image and Link */
 .image-container {
-    text-align: center; /* Center all content inside this container */
+    display: flex; /* Use flexbox to center items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align content */
+    justify-content: center; /* Center align content */
     margin: 2rem auto; /* Add spacing around the container */
+    width: 100%; /* Ensure it spans full width */
 }
 
 .image-container img {
-    width: 90%; /* Responsive width */
+    width: 90%; /* Ensure responsiveness */
     max-width: 600px; /* Limit maximum width */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px; /* Smooth rounded corners */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow for focus */
 }
 
+/* Centered Link Directly Below Image */
 .central-link {
-    display: inline-block; /* Centers the link as an inline element */
-    margin-top: 1rem; /* Adds spacing above the link */
-    font-size: 1rem; /* Adjust link font size */
-    color: #ff9800; /* Vibrant link color */
-    text-decoration: none; /* Remove underline */
+    display: block; /* Ensures the link is treated as a block element */
+    margin-top: 1rem; /* Adds space between the image and the link */
+    font-size: 1rem; /* Adjust font size for readability */
+    color: #ff9800; /* Link color */
+    text-decoration: none; /* Removes underline */
     transition: color 0.3s ease-in-out; /* Smooth hover effect */
 }
 
@@ -36,31 +41,18 @@ body {
     text-decoration: underline; /* Underline link on hover */
     color: #ffa726; /* Brighter hover color */
 }
+
 /* Description Section */
 .description {
     max-width: 800px;
-    margin: 0 auto 2rem auto; /* Center align with spacing below */
-    text-align: justify; /* Justify text for cleaner layout */
+    margin: 2rem auto; /* Center align with spacing below */
+    text-align: justify; /* Justify text for a cleaner layout */
     color: #d0d0d0; /* Subtle text color for body content */
     font-size: 1rem; /* Consistent size for readability */
 }
 
 .description p {
     margin-bottom: 1rem; /* Add spacing between paragraphs */
-}
-
-/* Image Container */
-.image-container {
-    text-align: center; /* Center align all content within */
-    margin: 2rem auto; /* Spacing around the container */
-}
-
-.image-container img {
-    width: 90%; /* Ensure responsiveness */
-    max-width: 600px; /* Limit maximum size */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for aesthetic */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow for focus */
 }
 
 /* Table Styling */
