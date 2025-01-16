@@ -1,19 +1,18 @@
 /* General Body Styles for Dark Mode */
 body {
     font-family: "Times New Roman", Times, serif;
-    background-color: #121212; /* Dark background for contrast */
+    background-color: #121212;
     margin: 0;
     padding: 2rem;
-    color: #e0e0e0; /* Light text color for readability */
-    line-height: 1.8; /* Enhanced line height for easier reading */
-    font-size: 1rem; /* Base font size */
+    color: #e0e0e0;
+    line-height: 1.8;
+    font-size: 1rem;
 }
 
-/* Centralized Title */
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center; /* Ensure title is centered */
+/* Centering All Headings */
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 /* Centralized Image and Link */
@@ -61,7 +60,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* Table Styling */
+/* Fixed Table Styling */
 .bibliography {
     max-width: 1000px;
     margin: 2rem auto;
@@ -70,16 +69,18 @@ h1 {
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Ensures borders don’t separate */
     margin-top: 1rem;
     background-color: #1e1e1e;
     color: #e0e0e0;
+    table-layout: fixed; /* Ensures equal column widths */
 }
 
 th, td {
-    border: 1px solid #333;
+    border: 1px solid #444; /* Lighter border color for better contrast */
     padding: 0.75rem 1rem;
-    text-align: left;
+    text-align: center; /* Centers table text */
+    word-wrap: break-word; /* Prevents text from overflowing */
 }
 
 th {
@@ -100,20 +101,19 @@ tr:hover {
 .community-blog {
     max-width: 800px;
     margin: 2rem auto;
-    text-align: center; /* Keep heading centered */
 }
 
-/* Blog Entry Alignment */
+/* Blog Entries Aligned Left */
 .blog-entry {
-    text-align: left; /* Ensures all blog content is aligned to the left */
+    text-align: left;
     margin-bottom: 2rem;
     padding: 1rem;
-    background-color: #1a1a1a; /* Slightly different background for contrast */
+    background-color: #1a1a1a;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Twitter and YouTube Embeds */
+/* Embedded Content */
 .blog-entry iframe {
     width: 100%;
     max-width: 560px;
@@ -140,7 +140,7 @@ a:hover {
         padding: 1rem;
     }
 
-    h1 {
+    h1, h2, h3 {
         font-size: 1.8rem;
     }
 
@@ -164,6 +164,7 @@ a:hover {
         padding: 0.5rem;
     }
 }
+
 
 
 
