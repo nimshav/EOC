@@ -7,7 +7,6 @@ body {
     color: #e0e0e0; /* Light text color for readability */
     line-height: 1.8; /* Enhanced line height for easier reading */
     font-size: 1rem; /* Base font size */
-    text-align: center; /* Ensures all content is centered */
 }
 
 /* Centralized Title */
@@ -101,13 +100,20 @@ tr:hover {
 .community-blog {
     max-width: 800px;
     margin: 2rem auto;
-    text-align: center;
+    text-align: center; /* Keep heading centered */
 }
 
+/* Blog Entry Alignment */
 .blog-entry {
+    text-align: left; /* Ensures all blog content is aligned to the left */
     margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #1a1a1a; /* Slightly different background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+/* Twitter and YouTube Embeds */
 .blog-entry iframe {
     width: 100%;
     max-width: 560px;
@@ -153,7 +159,12 @@ a:hover {
     th, td {
         padding: 0.5rem;
     }
+
+    .blog-entry {
+        padding: 0.5rem;
+    }
 }
+
 
 
 
